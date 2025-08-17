@@ -8,7 +8,7 @@ export default function GymLandingPage() {
   return (
     <div className="bg-gradient-to-br from-white via-gray-100 to-gray-200 text-gray-900 min-h-screen">
      
-     <Navbar />
+     {/* <Navbar /> */}
 <Hero />
     <Features />
 
