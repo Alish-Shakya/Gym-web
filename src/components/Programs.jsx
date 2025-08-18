@@ -93,7 +93,7 @@ const Programs = () => {
   ];
 
   return (
-    <section className="px-6 md:px-20 py-14 md:py-27 bg-black relative">
+    <section className="px-6 md:px-20 py-14 md:py-10 bg-[#111111] relative">
       {/* Section Heading */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-wide">

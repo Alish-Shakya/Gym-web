@@ -32,10 +32,10 @@ const Features = () => {
   ];
 
   return (
-    <section className="px-6 md:px-20 py-14 md:py-8 bg-black relative">
+    <section className="px-6 md:px-20 py-14 md:py-20 bg-[#000000] relative">
       {/* Section Heading */}
-      <div className="text-center mb-12">
-        <h2 className=" md:mt-20 text-3xl md:text-4xl font-extrabold text-white tracking-wide">
+      <div className="text-center mb-25">
+        <h2 className=" md:mt-9 text-3xl md:text-4xl font-extrabold text-white tracking-wide">
           Why <span className="text-yellow-500">Choose Us?</span>
         </h2>
         <div className="w-20 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
