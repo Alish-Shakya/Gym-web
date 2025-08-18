@@ -32,14 +32,14 @@ const Features = () => {
   ];
 
   return (
-    <section className="px-6 md:px-20 py-14 md:py-20 bg-black relative">
+    <section className="px-6 md:px-20 py-14 md:py-8 bg-black relative">
       {/* Section Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-wide">
+        <h2 className=" md:mt-20 text-3xl md:text-4xl font-extrabold text-white tracking-wide">
           Why <span className="text-yellow-500">Choose Us?</span>
         </h2>
         <div className="w-20 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
-        <p className="text-gray-400 mt-4 text-sm md:text-base">
+        <p className="text-gray-400 mt-4 text-sm md:text-base md:mb-15">
           We focus on your body, mind, and lifestyle — not just the reps.
         </p>
       </div>
@@ -56,14 +56,14 @@ const Features = () => {
               delay: i * 0.15 + Math.random() * 0.1, // irregular delay
             }}
             className={`rounded-2xl p-6 flex flex-col items-center text-center 
-                       bg-gradient-to-br from-gray-900/90 to-gray-800/70 
                        border border-gray-700/70 
                        hover:border-yellow-500/80 
                        hover:shadow-lg hover:shadow-yellow-500/20 
                        transition duration-300 
+                       hover:scale-110 hover:-translate-y-2 hover:z-10
                        ${
                          i % 2 === 0 ? "rotate-0.5" : "-rotate-0.5"
-                       }`} // tiny imperfect tilt
+                       }`} 
           >
             <div className="text-yellow-500 mb-4">{feature.icon}</div>
             <h3 className="font-semibold text-lg text-white mb-2 leading-snug">

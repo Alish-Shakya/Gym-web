@@ -57,13 +57,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { motion } from "framer-motion";
+import Gymbg from "../../assets/images/photo.jpg"
+// import Background from "../../assets/images/hello.jpg"
 
 const Hero = () => {
   return (
     <section
       className="relative h-screen text-white"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1')`,
+        backgroundImage: `url(${Gymbg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -74,10 +76,10 @@ const Hero = () => {
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/70"></div>
-
+      <div className="absolute inset-0 bg-black/70">
+      
       {/* Hero Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center mt-10 px-4 text-center">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -113,6 +115,10 @@ const Hero = () => {
           </button>
         </motion.div>
       </div>
+      
+      </div>
+
+      
     </section>
   );
 };
