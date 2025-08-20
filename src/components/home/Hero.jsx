@@ -55,7 +55,6 @@
 
 
 import React from "react";
-import Navbar from "./Navbar";
 import { motion } from "framer-motion";
 import Gymbg from "../../assets/images/photo.jpg"
 // import Background from "../../assets/images/hello.jpg"
@@ -65,15 +64,11 @@ const Hero = () => {
     <section
       className="relative h-screen text-white"
       style={{
-        backgroundImage: `url(${Gymbg})`,
+        backgroundImage: `url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* Navbar fixed on top */}
-      <div className="absolute top-0 left-0 w-full z-20">
-        <Navbar />
-      </div>
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/70">

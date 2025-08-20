@@ -8,7 +8,7 @@ const Navbar = () => {
     <header className="flex justify-between items-center px-4 md:px-8 py-4 border-b border-gray-300 bg-black/70 text-white fixed w-full z-50">
       {/* Logo */}
       <h1 className="text-xl md:text-3xl font-extrabold tracking-wide text-yellow-500">
-        The Planet Fitness Gym
+        Planet Fitness
       </h1>
 
       {/* Desktop Nav */}

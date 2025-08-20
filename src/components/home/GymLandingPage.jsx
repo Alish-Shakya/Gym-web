@@ -1,22 +1,22 @@
 import React from "react";
 
-import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Features from "./Features";
+import Programs from "./Programs";
+import Trainers from "./Trainers";
 
 export default function GymLandingPage() {
   return (
     <div className="bg-gradient-to-br from-white via-gray-100 to-gray-200 text-gray-900 min-h-screen">
      
-     {/* <Navbar /> */}
-<Hero />
+
+    <Hero />
     <Features />
+    <Programs />
+    <Trainers />
 
      
-      {/* Footer */}
-      {/* <footer className="border-t border-gray-300 py-6 text-center text-gray-500 text-xs md:text-sm">
-        © {new Date().getFullYear()} BeastMode Gym. All rights reserved.
-      </footer> */}
+
     </div>
   );
 }

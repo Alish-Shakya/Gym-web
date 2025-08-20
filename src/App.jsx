@@ -1,19 +1,18 @@
 import React from "react";
-import Programs from "./components/Programs";
-import Trainers from "./components/Trainers";
-import GymLandingPage from "./components/home/GymLandingPage";
-import PricingDuration from "./components/Pricing";
-import Contact from "./components/Contact";
+import MyRoute from "./routes/MyRoutes";
+
 
 const App = () => {
   return (
     <div>
 
-      <GymLandingPage />
-      <Programs />
-      <Trainers />
-      <PricingDuration />
-      <Contact />
+<MyRoute />
+
+
+            {/* Footer */}
+      <footer className="border-t border-gray-300 py-6 text-center text-gray-500 text-xs md:text-sm">
+        © {new Date().getFullYear()} BeastMode Gym. All rights reserved.
+      </footer>
     </div>
   );
 };

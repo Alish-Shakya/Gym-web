@@ -32,14 +32,14 @@ const Features = () => {
   ];
 
   return (
-    <section className="px-6 md:px-20 py-14 md:py-20 bg-[#000000] relative">
+    <section className="px-6 md:px-20 py-14 bg-white relative">
       {/* Section Heading */}
-      <div className="text-center mb-25">
-        <h2 className=" md:mt-9 text-3xl md:text-4xl font-extrabold text-white tracking-wide">
-          Why <span className="text-yellow-500">Choose Us?</span>
+      <div className="text-center mb-15">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-wide">
+          Why <span className="text-yellow-600">Choose Us?</span>
         </h2>
-        <div className="w-20 h-1 bg-yellow-500 mx-auto mt-3 rounded-full"></div>
-        <p className="text-gray-400 mt-4 text-sm md:text-base md:mb-15">
+        <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
+        <p className="text-gray-600 mt-4 text-sm md:text-base">
           We focus on your body, mind, and lifestyle — not just the reps.
         </p>
       </div>
@@ -53,23 +53,21 @@ const Features = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.7,
-              delay: i * 0.15 + Math.random() * 0.1, // irregular delay
+              delay: i * 0.15 + Math.random() * 0.1,
             }}
             className={`rounded-2xl p-6 flex flex-col items-center text-center 
-                       border border-gray-700/70 
+                       border border-gray-200 
                        hover:border-yellow-500/80 
-                       hover:shadow-lg hover:shadow-yellow-500/20 
+                       hover:shadow-lg hover:shadow-yellow-500/30 
                        transition duration-300 
                        hover:scale-110 hover:-translate-y-2 hover:z-10
-                       ${
-                         i % 2 === 0 ? "rotate-0.5" : "-rotate-0.5"
-                       }`} 
+                       ${i % 2 === 0 ? "rotate-0.5" : "-rotate-0.5"}`}
           >
-            <div className="text-yellow-500 mb-4">{feature.icon}</div>
-            <h3 className="font-semibold text-lg text-white mb-2 leading-snug">
+            <div className="text-yellow-600 mb-4">{feature.icon}</div>
+            <h3 className="font-semibold text-lg text-gray-900 mb-2 leading-snug">
               {feature.title}
             </h3>
-            <p className="text-gray-400 text-sm">{feature.text}</p>
+            <p className="text-gray-600 text-sm">{feature.text}</p>
           </motion.div>
         ))}
       </div>
