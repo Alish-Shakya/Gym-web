@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Facebook, Instagram, Music } from "lucide-react"; // TikTok alternative icon (using Music for TikTok)
+import FacebookIcon from "./ui/icons/FacebookIcon";
+import InstagramIcon from "./ui/icons/InstagramIcon";
+import TiktokIcon from "./ui/icons/TiktokIcon";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +17,13 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-between items-center px-4 md:px-8 py-4 border-b border-gray-300 bg-black/70 text-white fixed w-full z-50">
+      {/* Logo */}
       <h1 className="text-xl md:text-3xl font-extrabold tracking-wide text-yellow-500">
         Planet Fitness
       </h1>
 
-      {/* Desktop Nav */}
-      <nav className="hidden md:flex space-x-6 text-base">
+      {/* Center Nav */}
+      <nav className="hidden md:flex space-x-6 text-xl gap-8 absolute left-1/2 transform -translate-x-1/2">
         {navItems.map((item) =>
           item.path.startsWith("#") ? (
             <a
@@ -39,6 +44,19 @@ const Navbar = () => {
           )
         )}
       </nav>
+
+      {/* Social Media Icons (Right Side) */}
+      <div className="hidden md:flex space-x-4 text-yellow-500 gap-8 mr-5">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <FacebookIcon />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <InstagramIcon />
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+          <TiktokIcon />
+        </a>
+      </div>
 
       {/* Mobile Menu Button */}
       <button
@@ -72,9 +90,21 @@ const Navbar = () => {
               </Link>
             )
           )}
+          {/* Socials in Mobile Nav */}
+          <div className="flex space-x-4 pt-4 text-yellow-500">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+         <FacebookIcon />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <TiktokIcon />
+            </a>
+          </div>
         </nav>
       )}
-    </header>
+    </header>   
   );
 };
 
