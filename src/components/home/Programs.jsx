@@ -9,7 +9,7 @@ import Zumba from "../../assets/images/program/Zumba.png";
 const Programs = () => {
   const programs = [
     {
-      icon: <Music size={38} />,
+      icon: <Dumbbell size={38} />,
       title: "Gym",
       text: "Dance your way to fitness with energetic and fun Zumba classes that burn calories while you enjoy.",
       img: Gym,
@@ -21,7 +21,7 @@ const Programs = () => {
       img: Cardio,
     },
     {
-      icon: <Dumbbell size={38} />,
+      icon: <Music size={38} />,
       title: "Zumba",
       text: "Access top-of-the-line gym equipment and professional trainers to help you achieve your fitness goals.",
       img: Zumba,
@@ -60,7 +60,7 @@ const Programs = () => {
                        hover:scale-105 hover:-translate-y-2 hover:z-10
                        flex flex-col items-center text-center p-6`}
           >
-            <div className="mb-4 overflow-hidden rounded-lg">
+            <div className="mb-4 overflow-hidden rounded-lg w-full h-56">
               <img
                 src={program.img}
                 alt={program.title}

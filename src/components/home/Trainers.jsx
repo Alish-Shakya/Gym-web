@@ -2,26 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import GymTrainer from "../../assets/images/trainer/GymTrainer.png";
 import ZumbaTrainer from "../../assets/images/trainer/ZumbaTrainer.png";
-// import FitnessBanner from "../../assets/images/program/FitnessBanner.png"; // Add any aesthetic image (like dumbbells, yoga pose, etc.)
+import Traning from "../../assets/images/trainer/Traning.png";
 
 const trainersData = [
   {
     name: "Alex Johnson",
-    title: "Zumba Expert",
+    title: "Cardio and Gym Coach",
     description:
       "Alex brings the energy with dynamic Zumba sessions that make fitness feel like a party.",
-    image: ZumbaTrainer,
+    image: GymTrainer,
   },
   {
     type: "banner", // decorative card
-    image: GymTrainer,
+    image: Traning,
   },
   {
     name: "Samantha Lee",
-    title: "Cardio & Gym Coach",
+    title: "Zumba Expert",
     description:
       "Samantha specializes in high-energy cardio workouts and strength training designed to boost stamina, build muscle, and improve overall fitness.",
-    image: GymTrainer,
+    image: ZumbaTrainer,
   },
 ];
 
@@ -52,7 +52,7 @@ const Trainers = () => {
                 duration: 0.7,
                 delay: i * 0.15 + Math.random() * 0.1,
               }}
-              className="rounded-2xl overflow-hidden border border-gray-200 
+              className="rounded-2xl overflow-hidden border border-gray-200 h-100
                          hover:border-yellow-500/80 
                          hover:shadow-lg hover:shadow-yellow-500/30 
                          transition duration-300 flex items-center justify-center"
@@ -79,12 +79,11 @@ const Trainers = () => {
                        hover:scale-105 hover:-translate-y-2 hover:z-10
                        flex flex-col items-center text-center p-6`}
             >
-              {/* Square Image */}
-              <div className="w-48 h-48 mb-4 overflow-hidden rounded-lg">
+              <div className="mb-4 overflow-hidden rounded-lg w-full h-56">
                 <img
                   src={trainer.image}
                   alt={`${trainer.name} - ${trainer.title}`}
-                  className="object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
 
