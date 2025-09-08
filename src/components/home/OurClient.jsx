@@ -40,7 +40,7 @@ const OurClients = () => {
   };
 
   return (
-    <section className="py-20 px-8 md:px-20 bg-gray-50 text-gray-800">
+    <section className="py-6 px-8 md:px-20 bg-gray-50 text-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left Side - Text */}
         <div className="md:w-[35%] flex flex-col justify-center">

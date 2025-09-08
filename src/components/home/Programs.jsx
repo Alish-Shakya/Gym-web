@@ -29,7 +29,7 @@ const Programs = () => {
   ];
 
   return (
-    <section className="px-6 md:px-20 py-14 bg-white relative">
+    <section className="px-6 md:px-20 py-6 bg-white relative">
       {/* Section Heading */}
       <div className="text-center mb-15">
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-wide">

@@ -30,7 +30,7 @@ const Trainers = () => {
     <section className="px-6 md:px-20 py-14 bg-white relative">
       {/* Section Heading */}
       <div className="text-center mb-15">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-wide">
+        <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 tracking-wide">
           Meet Our <span className="text-yellow-600">Trainers</span>
         </h2>
         <div className="w-20 h-1 bg-yellow-500 mx-auto rounded-full"></div>
